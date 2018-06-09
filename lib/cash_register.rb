@@ -1,6 +1,6 @@
 class CashRegister
   
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :total, :last_transaction
   
   @@items = []
   @@last_item = []
@@ -38,9 +38,6 @@ end
   end
 
   def void_last_transaction
-    price, quantity = @@last_item[1], price = @@last_item[2]
-    @total -= (price * quantity)
-    @@last_item.clear
-    @@items.slice!(-1, quantity)
+    self.total = self.total - self.last_transaction
   end
 end
