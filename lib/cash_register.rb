@@ -23,5 +23,7 @@ class CashRegister
     quantity -=1
   end
 end
+
+
   
 end
