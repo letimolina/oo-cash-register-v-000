@@ -43,10 +43,4 @@ end
     @@last_item.clear
     @@items.slice!(-1, quantity)
   end
-# end
-
-
-
-
-  
 end
